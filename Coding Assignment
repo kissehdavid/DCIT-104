@@ -1,0 +1,45 @@
+Name: Amediku David Kisseh
+Student ID: 10988003
+
+Coding assignment 1: Write a program to calculate the average of all even numbers 1 and 10000. 
+
+//Using Python for this Assignment
+
+num = int(input("State the number: "))
+//the input function was used to request an input from the user. In this case, we will enter 10000.
+count = 0
+sum = 0
+
+for i in range(1, num + 1):
+    if i%2 == 0:
+        sum = sum + i
+        count = count + 1
+
+average = sum / count
+print("The average of all even numbers from 1 to ",num, " is ", average)
+//where num = 10000
+
+
+
+
+Coding Assignment 2: Write a program that produces the sum of all prime numbers less than a given number
+
+//Using Python,
+
+num = int(input("State the given number: "))
+sum = 0
+
+for i in range(2, num + 1):
+    for j in range(2, i):
+        if i % j == 0:
+            break
+    else:
+        sum = sum + i
+print("The sum of all Prime numbers less than", num, "is", sum)
+
+
+
+
+
+
+//code written by khiss_dhave :)
